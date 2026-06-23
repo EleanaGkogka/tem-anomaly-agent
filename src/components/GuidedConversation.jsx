@@ -91,6 +91,7 @@ export default function GuidedConversation({ onDone }) {
       {/* RESOLVED — user chose to handle it themselves */}
       {step === 'resolved' && (
         <div className="guided-step">
+          <div className="guided-step-indicator"><span>Done</span></div>
           <div className="agent-narrative">
             <div className="agent-narrative-header">
               <Sparkles size={12} strokeWidth={1.75} />

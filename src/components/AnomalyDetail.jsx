@@ -158,8 +158,12 @@ export default function AnomalyDetail({ onBack, onNavigate, onDismiss }) {
                 name="actual"
               />
               <Legend
-                wrapperStyle={{ fontSize: '12px', color: '#666', paddingTop: '16px' }}
-                formatter={(value) => value === 'actual' ? 'Actual usage' : 'Normal baseline'}
+                wrapperStyle={{ fontSize: '12px', paddingTop: '16px' }}
+                formatter={(value) => (
+                  <span style={{ color: '#999' }}>
+                    {value === 'actual' ? 'Actual usage' : 'Normal baseline'}
+                  </span>
+                )}
               />
             </LineChart>
           </ResponsiveContainer>
