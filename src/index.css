@@ -1,0 +1,35 @@
+:root {
+  --bg-primary: #0a0a0a;
+  --bg-surface: #1a1a1a;
+  --border: #2a2a2a;
+  --brand: rgb(255, 63, 16);
+  --brand-dim: rgba(255, 63, 16, 0.12);
+  --text-primary: #ffffff;
+  --text-secondary: #888888;
+  --font: 'Inter', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: var(--font);
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
