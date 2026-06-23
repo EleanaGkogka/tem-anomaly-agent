@@ -56,7 +56,6 @@
 .guided-hint {
   font-size: 12px;
   color: var(--text-secondary);
-  margin-top: -8px;
 }
 
 .guided-done-row {
